@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# script assumes that repository directory is located at ~/pearsonal/devenv
+cd
+ln -s pearsonal/devenv/bash_profile .bash_profile
+
 # ensure XCode is installed (https://stackoverflow.com/questions/30533039/verify-xcode-command-line-tools-install-in-bash-script)
 check=$((xcode-\select --install) 2>&1)
 echo $check
